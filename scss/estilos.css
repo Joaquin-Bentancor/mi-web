@@ -1,11 +1,22 @@
 * {
   box-sizing: border-box;
+
 }
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, sans-serif;
   margin: 0;
 }
+
+
+.informacion{
+  background-color:#d3d5d5;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Informaciob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 
 a {
   text-decoration: none;
@@ -37,12 +48,9 @@ nav a {
 nav a:hover {
   color: rgb(238, 238, 238);
 }
-
-.label {
-  display: flex;
-  flex-flow: column;
+.hover :hover{
+  color: rgb(238, 238, 238);
 }
-
 .container {
   max-width: 1400px;
   margin: auto;
@@ -64,44 +72,6 @@ nav a:hover {
 #hero h3 {
   color: white;
 }
-
-#nba-draft .texto {
-  width: 50%;
-  max-width: 600px;
-  text-align: initial;
-  padding: 0px 30px;
-  flex-direction: column;
-  justify-content: center;
-}
-#nba-draft .img-container {
-  background-image: url(../img/Wenby.png);
-  background-size: cover;
-  background-position: center center;
-  height: 400px;
-  width: 300px;
-  margin: 2px;
-}
-
-.Informacion {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Movil.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.Draft {
-  margin: 1, 5%;
-  background-color: rgb(255, 255, 255);
-}
-
-div img {
-  margin: auto;
-  height: 380px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
 .video-contenedor {
   position: relative;
   padding-bottom: 56.25%;
@@ -114,13 +84,67 @@ div img {
   width: 100%;
   height: 100%;
 }
-
 .subrayar {
   color: black;
-  text-decoration: underline;
 }
 
-
+.Top10-img{
+width: 50%;
+max-width: 576px;
+min-height: 320px;
+margin-right: auto
+}
+.Top10-img{
+width: 100%;
+}
+.Wemby-img{
+width: 600px;
+max-width: 576px;
+min-height: 320px;
+margin-right: auto
+}
+.Wemby-img{
+width: 100%;
+}
+.Draft-Nba{
+width: 600px;
+max-width: 576px;
+min-height: 320px;
+margin-right: auto
+}
+.Draft-Nba{
+width: 100%;
+}
+.Summer-League{
+width: 600px;
+max-width: 576px;
+min-height: 320px;
+margin-right: auto
+}
+.Summer-League{
+  width: 100%;
+}
+.Texto{
+  margin: 1%;
+  color: white;
+}
+.h2-informacion{
+  color: white;
+  margin: 1%;
+}
+.h4-comentarios{
+margin: 1%;
+margin-bottom: 4%;
+}
+.h5-comentarios{
+margin: 1%;
+}
+.comentarios-Disqus{
+  margin: 1%;
+}
+.fondo-comentarios{
+  background-color: #d3d5d5;
+}
 
 @media (min-width: 320px) and (max-width: 576px) {
   header {

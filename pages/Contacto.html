@@ -1,41 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../scss/estilos.css">    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../scss/estilos.css" />
+    <meta name="description" content="Aca podras registrate en nuestra web" />
     <title>Contacto</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="../img/Logo.png" alt="logo">
-            <h1 class="nombre de pagina">Basket NBA</h1>
-        </div>
-        
-        <nav>
-        <a href="../index.html" class="nav-link">Inicio</a>
-        <a href="./Informacion.html" class="nav-link">Informacion</a>
-        <a href="./Multimedia.html" class="nav-link">Multimedia</a>
-        <a href="./Contacto.html" class="nav-link">Contacto</a>
-        <a href="./Servicios.html" class="nav-link">Servicios</a>
-        </nav>
-    </header>
-    <h3><P>Contacto</P></h3>
-    <main>
-        <form action="contacto">
-            <label for="Nombre"></label>
-            <input type="text">Nombre</label>
-            <label for="Gmail">
-            <input type="email">Gmail</label>
-            <label for="Password">
-            <input type="password">Contraseña</label>
-        </form>
-    </main>
-    <footer>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
 
+      body{
+        background:#d3d5d5;
+        background:linear-gradient(to right,#d3d5d5, grey);
+      }
+      .bg{
+        background-image:url(../img/Fondo\ formulario.jpg) ;
+        background-position: center center;
+      }
+    </style>
+  </head>
+  <body class="Contacto">
+    <header>
+      <div class="logo">
+        <img src="../img/Logo.png" alt="logo" />
+        <h1 class="nombre de pagina">Basket NBA</h1>
+      </div>
+
+      <nav>
+        <a href="../index.html" class="inicio text-decoration-none text-dark hover">Inicio</a>
+        <a href="./Informacion.html" class="Informacion text-decoration-none text-dark hover">Informacion</a>
+        <a href="./Multimedia.html" class="multimedia text-decoration-none text-dark hover">Multimedia</a>
+        <a href="./Contacto.html" class="contacto text-decoration-none text-dark hover">Contacto</a>
+        <a href="./Servicios.html" class="servicios text-decoration-none text-dark hover">Comentarios</a>
+      </nav>
+    </header>
+    <main></main>
+
+    <section>
+      <div class="container w-75 mt-5 rounded shadow">
+        <div class="row alige-items-stretch">
+          <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded"></div>
+
+          <div class="col bg-white p-5 rounded-end">
+            <h2 class="fm-bold text-center py-5">Bienvenido</h2>
+
+            <form action="#">
+              <div class="mb-4">
+                <label for="email" class="form-label">Correo electronico</label>
+                <input type="email" class="form-control" name="email">
+              </div>
+              <div class="mb-4">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" name="password">
+              </div>
+              <div class="mb-4 form-check">
+                <input type="checkbox" name="Conectar"class="form-check-input" id="">
+                <label for="Conectar" class="form-check-label">Mantener conectado</label>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+              </div>
+              <div class="my-3">
+                <span>¿No tienes cuenta? <a href="#">Registrate</a></span><br>
+                <span><a href="#">Recuperar contraseña</a></span>
+              </div>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer>
     </footer>
-</body>
+  </body>
 </html>
